@@ -2,7 +2,7 @@ require 'pry'
 
 def reverse_each_word(sentence)
   array = sentence.split
-  reversed = array.collect |word| {word.reverse}
+  reversed = array.collect {|word| word.reverse}
   reversed.join(" ")
 end
 
