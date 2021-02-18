@@ -2,7 +2,10 @@ require 'pry'
 
 def reverse_each_word(sentence)
   array = sentence.split
-  binding.pry
+  array.map do |word|
+    word.reverse
+  end
+  return array  
 end
 
-reverse_each_word("Hello there")
+#reverse_each_word("Hello there")
